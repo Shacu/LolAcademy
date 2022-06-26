@@ -1,0 +1,303 @@
+@font-face{
+	font-family: Friz-Quadrata;
+	src: url(../fonts/Friz-Quadrata-Std-Medium.otf);
+}
+
+*{
+	font-size: 62.5%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Friz-Quadrata;
+}
+
+.contain{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10% 78% 12%;
+	grid-template-areas: "nav" 
+	"main" 
+	"pie";
+}
+
+nav{
+	background-color: #061D26;
+	height: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+}
+
+.nav__img--tamaño{
+	height: 100%;
+}
+
+nav ul{
+	list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}
+nav ul li{
+	display: inline-block;
+	padding: 3rem 1rem;
+}
+
+nav ul li a{
+	font-size: 2rem;
+	color: #F2DC6D;
+	text-decoration: none;
+	padding: 3rem 1rem;
+}
+
+.main__index--bg{
+	background-image: url(../img/fondo.jpg);
+	padding-left: 1rem;
+	background-attachment: fixed;
+}
+
+.main__queeslolacademy--bg{
+	background-image: url(../img/Institute_of_War.webp);
+	width: 100vw;
+}
+
+.main__contactanos--bg{
+	background-image: url(../img/Imagen_pagina_principal.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.main__registro--bg{
+	background-color: #45C4B0;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1{
+	padding-top: 5rem;
+	font-size: 5rem;
+	color: #F2DC6D;
+}
+
+h2{
+	font-size: 2rem;	
+}
+
+.h2__index{
+	font-size: 2rem;
+	display: flex;
+    justify-content: center;
+}
+
+.h2__queeslolacademy{
+	font-size: 3rem;
+	color: #F2DC6D;
+	padding-top: 2rem;
+}
+
+.texto__parrafo--index{
+	font-size: 2rem;
+	color: #C3CBCC;
+	margin-top: 20rem;
+	text-align: left;
+	height: 60vh;
+	width: 50vw;
+	padding-left: 2rem;
+}
+
+.texto__parrafo--queeslolacademy{
+	font-size: 2rem;
+	color: #C3CBCC;
+	margin-top: 20rem;
+	text-align: left;
+	padding-left: 2rem;
+}
+
+.texto__parrafo--contactanos{
+	font-size: 2rem;
+	color: #C3CBCC;
+	margin-top: 2rem;
+	text-align: left;
+	padding-left: 2rem;
+}
+
+footer{
+	background-color: #055951;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+footer ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+footer ul li a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #F2E3B3;
+}
+
+.redes__links--borde{
+	border: solid #23D9B7 0.5rem;
+	padding: 1rem 0 0rem 0rem;
+	width: 11.5vw;
+	display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img__tamaño{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.torneos__texto--posicion{
+	display: flex;
+	padding: 1rem 2rem 1rem 2rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__texto--size{
+	font-size: 2rem;
+	width: 100%;
+}
+
+footer p a{
+	text-decoration: none;
+	color: #F2DC6D;
+	font-size: 2rem;
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#main{
+	grid-area: main;
+	display: flex;
+    flex-direction: column;
+}
+
+#footer{
+	grid-area: pie;
+}
+
+.main_form{
+	font-size: 2rem;
+	color: #C3CBCC;
+	padding: 1rem;
+}
+
+.main_form-contactanos{
+	font-size: 4rem;
+	color: #C3CBCC;
+	padding: 1rem;
+	height: 40vh;
+}
+
+.img_yummi-size{
+	height: 50vh;
+	width: 50vw;
+}
+
+.flex_main-registro{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+
+	.contain{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 10% 75% 15%;
+		grid-template-areas: "nav" 
+		"main" 
+		"pie";
+	}
+
+	.main__index--bg{
+		background-image: url(../img/fondo.jpg);
+		padding-left: 1rem;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	body nav ul{
+		list-style: none;
+    	display: flex;
+    	width: 100%;
+    	align-items: flex-end;
+    	flex-direction: column-reverse;
+    	align-content: flex-end;
+    	justify-content: space-between;
+    	padding: 1rem;
+	}
+
+	nav ul li{
+		display: inline-block;
+		padding: 0;
+	}
+
+	.texto__parrafo--index{
+		font-size: 2rem;
+		color: #C3CBCC;
+		margin-top: 4rem;
+		text-align: center;
+		height: 60vh;
+		width: 100%;
+		padding: 2rem;
+	}
+
+	.img__tamaño{
+		height: 1.5rem;
+		width: 1.5rem;
+		display: flex;
+    	flex-direction: column;
+	}
+
+	footer ul li a{
+		font-size: 0;
+	}
+
+	.h2_redes{
+		display: none;
+	}
+
+	.texto__parrafo--queeslolacademy {
+    	font-size: 2rem;
+    	color: #C3CBCC;
+    	margin-top: 4rem;
+    	text-align: center;
+    	padding: 2rem;
+	}
+
+	.h2__queeslolacademy{
+		padding: 1rem;
+	}
+
+	nav ul li a{
+		font-size: 1.5rem;
+	}
+
+	.img_yummi-size{
+		height: 50vh;
+		width: 50vw;
+		display: none;
+	}
+}
