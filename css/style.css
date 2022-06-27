@@ -262,6 +262,12 @@ footer p a{
 	text-align: center;
 }
 
+.scale:hover{
+	transform: scale(1.2 , 1.2);
+	transition: transform 2s;
+	cursor: pointer;
+}
+
 @media (max-width: 768px){
 
 	.contain{
